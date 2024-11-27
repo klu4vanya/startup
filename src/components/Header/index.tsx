@@ -29,7 +29,7 @@ function Header() {
         </LogoContainer>
         <AboutContainer>
           <TextSpan to='/main'>Главная</TextSpan>
-          <TextSpan to='/startup'>Продукты</TextSpan>
+          <TextSpan to='/'>Продукты</TextSpan>
           <TextSpan to='/projects'>Проекты</TextSpan>
           <TextSpan to='/archive'>Архив</TextSpan>
           <TextSpan to='/about'>О компании</TextSpan>
