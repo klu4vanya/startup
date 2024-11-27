@@ -11,7 +11,7 @@ function App() {
       <HashRouter>
         <Header />
           <Routes>
-            <Route path="/" element={<Products />} />
+            <Route path="/startup" element={<Products />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/auth" element={<Auth />} />
           </Routes>
