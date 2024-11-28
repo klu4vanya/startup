@@ -1,4 +1,5 @@
-import { ProductsContainer, CategoryContainer, TitleCategory, Title, Subtitle, ProductName, Container, Line, ProductSubtitleContainer, ProductSubtitle } from "./styles";
+import { TextSpan } from "../Header/styles";
+import { ProductsContainer, CategoryContainer, TitleCategory, Title, Subtitle, ProductName, Container, Line, ProductSubtitleContainer, ProductSubtitle, MoreButton } from "./styles";
 
 
 export default function Products() {
@@ -12,15 +13,19 @@ export default function Products() {
             </CategoryContainer>
             <Container>
                 <ProductName>Pathology Assistant</ProductName>
-                <Line/>
+                <Line />
                 <ProductSubtitleContainer>
                     <ProductSubtitle>Система поддержки принятия врачебных решений, продукт, оптимизирующий диагностический процесс, являющийся инструментом для дифференциальной диагностики и
-                    объективизации диагностики, по аналогии с гистологическими атласами…</ProductSubtitle>
+                        объективизации диагностики, по аналогии с гистологическими атласами…{'\u00A0'}
+                        <MoreButton to="/pathologyAssistant">Подробнее</MoreButton>
+                    </ProductSubtitle>
                 </ProductSubtitleContainer>
                 <ProductName>Digital Pathology Collaboration</ProductName>
-                <Line/>
+                <Line />
                 <ProductSubtitleContainer>
-                    <ProductSubtitle>Программное обеспечение являющееся аналогом multi-head микроскопа, позволяющее проводить образовательные мероприятия для патологов…</ProductSubtitle>
+                    <ProductSubtitle>Программное обеспечение являющееся аналогом multi-head микроскопа, позволяющее проводить образовательные мероприятия для патологов…{'\u00A0'}
+                    <MoreButton to="/digitalPathology">Подробнее</MoreButton>
+                    </ProductSubtitle>
                 </ProductSubtitleContainer>
             </Container>
         </ProductsContainer>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { CategoryContainer, Container, Line, ProductName, ProductsContainer, ProductSubtitle, ProductSubtitleContainer, Title, TitleCategory } from '../Products/styles'
-import { Bruh } from './styles'
 
 export default function Projects() {
   return (

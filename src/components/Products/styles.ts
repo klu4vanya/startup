@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
@@ -73,4 +74,10 @@ export const ProductSubtitle = styled.div`
     line-height: 24px;
     color: #666666;
 
+`
+export const MoreButton = styled(Link)`
+    width: 83px;
+    height: 18px;
+    text-decoration: none;
+    color: #4b0ffc;
 `
