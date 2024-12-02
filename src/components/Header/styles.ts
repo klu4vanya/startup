@@ -17,12 +17,13 @@ export const ContactsContainer = styled.div`
     align-items: center;
 
 `
-export const Contact = styled.div`
+export const Contact = styled.a`
     width: 165px;
     height: 50px;
     font-size: 13;
     line-height: 50px;
     color: #999999;
+    text-decoration: none;
 `
 
 export const LogoContainer = styled.div`
@@ -49,7 +50,7 @@ export const TextSpan = styled(NavLink)`
     text-transform: uppercase;
     font-weight: 600;
     font-style: normal;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
     color: #444444;
     text-decoration: none;

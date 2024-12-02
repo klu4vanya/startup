@@ -197,7 +197,7 @@ const Main: React.FC = () => {
                         textAlign: 'center',
                         paddingTop: '70px'
                     }}
-                >Данные и институционные партнеры</StatTitle>
+                >Партнеры</StatTitle>
                 <PartnerContainer >
                     {PartnerData.map((item, index) => (
                         <img 

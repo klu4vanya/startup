@@ -27,7 +27,7 @@ export const FormContainer = styled.div`
 
 export const LogoFromContainer = styled.div`
     width: 360px;
-    height: 48px;
+    height: 120px;
     margin-bottom: 48px;
 `
 

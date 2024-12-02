@@ -1,7 +1,7 @@
 import React from 'react'
 import { AuthContainer, AuthTitle, BackGroundWrapper, BazaFrom, CreateAcc, DontHaveAcc, DontHaveAccTitle, FormContainer, FormWrapper, LoginPasswordContainer, LogoFromContainer, SignInFromContainer, StyledButton, StyledTextField } from './styles'
 import Background from '../../assets/background.png'
-import Logo from '../../assets/photo_2024-11-22_01-05-10.jpg'
+import Logo from '../../assets/logo.png'
 import { Title } from '../Products/styles'
 import { Box, Button, TextField } from '@mui/material'
 
@@ -19,6 +19,12 @@ export default function Auth() {
                     <LogoFromContainer>
                         <img
                             src={Logo}
+                            style={{
+                                transform: 'rotate(90deg)',
+                                objectFit: 'contain',
+                                width: '100%',
+                                height: '100%'
+                            }}
                         />
                     </LogoFromContainer>
                     <SignInFromContainer>
