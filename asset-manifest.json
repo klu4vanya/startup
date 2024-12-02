@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/startup/static/css/main.81b5b150.css",
-    "main.js": "/startup/static/js/main.68a05cb6.js",
+    "main.js": "/startup/static/js/main.16c77bc8.js",
     "static/js/453.e94d72af.chunk.js": "/startup/static/js/453.e94d72af.chunk.js",
     "static/media/background.png": "/startup/static/media/background.c8538f59237fad76ee38.png",
     "static/media/mainPage2.jpg": "/startup/static/media/mainPage2.10f8b0e641c4a6b93d1c.jpg",
@@ -11,15 +11,16 @@
     "static/media/mainPage3.jpg": "/startup/static/media/mainPage3.c2d3c2e327bb92fedc6e.jpg",
     "static/media/mainPage4.jpg": "/startup/static/media/mainPage4.f69bf836d799edb587a8.jpg",
     "static/media/логотип партнера 1.jpg": "/startup/static/media/логотип партнера 1.c8f97cdd7bd9bf5aee31.jpg",
+    "static/media/logo.png": "/startup/static/media/logo.4f687ed51fdf353282cf.png",
     "static/media/логотип парнера 2.jpg": "/startup/static/media/логотип парнера 2.3f712d393caaa191ed80.jpg",
     "static/media/логотип партнёра 3.jpg": "/startup/static/media/логотип партнёра 3.3d90fbf2a3fed03b0caf.jpg",
     "index.html": "/startup/index.html",
     "main.81b5b150.css.map": "/startup/static/css/main.81b5b150.css.map",
-    "main.68a05cb6.js.map": "/startup/static/js/main.68a05cb6.js.map",
+    "main.16c77bc8.js.map": "/startup/static/js/main.16c77bc8.js.map",
     "453.e94d72af.chunk.js.map": "/startup/static/js/453.e94d72af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b5b150.css",
-    "static/js/main.68a05cb6.js"
+    "static/js/main.16c77bc8.js"
   ]
 }
