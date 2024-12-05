@@ -58,7 +58,7 @@ export const MainTitle = styled.div`
 
 export const MainSubitle = styled.div`
     width: 100%;
-    height: 42px;
+    height: auto;
     margin-top: 44px;
     font-size: 14px;
     line-height: 23px;

@@ -10,7 +10,7 @@ export default function DigitalPathology() {
                         style={{
                             width: 'auto'
                         }}
-                    >Pathology Assistant</Title>
+                    >Digital Pathology Collaboration ©</Title>
                 </TitleCategory>
             </CategoryContainer>
             <Container>
