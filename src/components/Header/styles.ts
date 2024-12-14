@@ -4,16 +4,18 @@ import vk_icon from '../../assets/vk-icon.svg'
 import tg_icon from '../../assets/tg-icon.svg'
 
 export const HeaderContainer = styled.div`
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     
-    width: 60%;
-    height: 180px;
+    width: 80%;
+    height: 190px;
     background-color: #fff;
     
 `
 export const ContactsContainer = styled.div`
-    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
     height: 51px;
     display: flex;
     align-items: center;
@@ -28,7 +30,7 @@ export const Contact = styled.a`
 `
 
 export const LogoContainer = styled.div`
-    width: 125px;
+    width: 115px;
     height: auto;
 `
 
