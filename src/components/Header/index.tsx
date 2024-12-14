@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutContainer, AboutWrapper, Contact, ContactsContainer, HeaderContainer, LogoContainer, TextSpan } from './styles'
+import { AboutContainer, AboutWrapper, Contact, ContactsContainer, HeaderContainer, LogoContainer, SocialNetworkContainer, TelegramIcon, TextSpan, VKIcon } from './styles'
 import Logo from '../../assets/logo.png'
 import PhoneIcon from '../../assets/PhoneIcon.png'
 import MailIcon from '../../assets/Mailicon.png'
@@ -36,6 +36,10 @@ function Header() {
           <TextSpan to='/contacts'>Контакты</TextSpan>
           <TextSpan to='/auth'>Вход</TextSpan>
         </AboutContainer>
+        <SocialNetworkContainer>
+          <TelegramIcon to='#'/>
+          <VKIcon to='#'/>
+        </SocialNetworkContainer>
       </AboutWrapper>
     </HeaderContainer>
   )

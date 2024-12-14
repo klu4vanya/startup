@@ -5,6 +5,7 @@ import page2 from '../../assets/mainPage2.jpg'
 import page3 from '../../assets/mainPage3.jpg'
 import page4 from '../../assets/mainPage4.jpg'
 import page5 from '../../assets/mainPage5.jpg'
+import page6 from '../../assets/covid19.jpg'
 import Comp from '../../assets/Comp.png'
 import Icon_1 from '../../assets/Icon1.png'
 import Icon_2 from '../../assets/Icon2.png'
@@ -13,6 +14,8 @@ import Part1 from '../../assets/логотип партнера 1.jpg'
 import Part2 from '../../assets/логотип парнера 2.jpg'
 import Part3 from '../../assets/логотип партнёра 3.jpg'
 import Part4 from '../../assets/логотип партнера 4.png'
+import Part5 from '../../assets/логотип партнера 5.jpg'
+import Part6 from '../../assets/логотип партнера 6.png'
 
 import { Container, Line, ProductName, ProductsContainer } from '../Products/styles';
 
@@ -59,40 +62,37 @@ const Main: React.FC = () => {
             title: 'Рак предстательной железы'
         },
         {
-            image: page3,
+            image: page6,
             title: 'Covid-19'
         }
     ]
 
     const CompData = [
         {
-            image: Icon_1,
-            title: 'SAAS решение',
-            subtitle: 'Облачное SAAS решение не требует установки на ПК, доступно из любого браузера в любой точке света. Для использования необходим только интернет.'
+            title: 'Облачный доступ',
+            subtitle: 'Онлайн решение не требует установки на ПК, доступно с любого браузера в любой точке света. Для использования необходим только интернет.'
         },
         {
-            image: Icon_2,
-            title: 'Дистанционность',
-            subtitle: 'Система позволяет консультировать оцифрованные гистологические препараты в любой точке мира в режиме реального времени.'
+            title: 'Второе мнение и онлайн консультирование',
+            subtitle: 'Платформа обеспечивает вседоступность патоморфологической диагностики для пациентов различных регионов. Система позволяет консультировать оцифрованные гистологические препараты дистанционно в режиме реального времени.'
         },
         {
-            image: Icon_3,
-            title: 'Консилиум',
-            subtitle: 'Digital Pathology позволяет проводить консультацию гистологического препарата в режиме врачебного консилиума без ограничения числа единовременных пользователей.'
+            title: 'Аннотирование и искусственный интеллект',
+            subtitle: 'AI-инструменты позволяют ускорить диагностический поиск и предотвратить развитие заболеваний на ранних этапах. Встроенная система аннотации делает разработку наборов данных быстрой и удобной.'
         }
     ]
     const StatData = [
         {
-            amount: '12+',
-            subtitle: 'из 20 лучших биофармацевтических компаний'
+            amount: '10+',
+            subtitle: 'разработанных инструментов AI'
         },
         {
-            amount: '25+',
-            subtitle: 'клинические исследования'
+            amount: '105+',
+            subtitle: 'аннотированных и подготовленных наборов данных'
         },
         {
-            amount: '1',
-            subtitle: 'перспективная запись на исследование'
+            amount: '5+',
+            subtitle: 'клиник и больниц участвуют в программе партнерства'
         }
     ]
     const PartnerData = [
@@ -108,6 +108,12 @@ const Main: React.FC = () => {
         {
             image: Part4
         },
+        {
+            image: Part5
+        },
+        {
+            image: Part6
+        }
     ]
 
     return (
@@ -140,7 +146,7 @@ const Main: React.FC = () => {
             </TestContainer>
             <TestContainer
                 style={{
-                    height: '659px',
+                    height: '759px',
                     backgroundColor: '#f2f2f2',
                     justifyContent: 'space-evenly'
 
@@ -153,10 +159,6 @@ const Main: React.FC = () => {
                 <CompContainer>
                     {CompData.map((item, index) => (
                         <SubCompContainer key={index}>
-                            <img
-                                style={{ width: '15px', height: '14px' }}
-                                src={item.image}
-                            />
                             <SubCompTitle>{item.title}</SubCompTitle>
                             <SubCompSubtitle>{item.subtitle}</SubCompSubtitle>
                         </SubCompContainer>
@@ -169,12 +171,11 @@ const Main: React.FC = () => {
                 style={{
                     backgroundColor: '#d5d2d6',
                     flexDirection: 'column',
-                    height: '800px'
+                    height: '600px'
                 }}
             >
                 <Container>
-                    <StatTitle>Технология nucleais выделяется тем, что является первым пространственным инструментом искусственного интеллекта, используемым патологами для отбора пациентов для клинических испытаний, который напрямую связан с программой разработки лекарственных препаратов.</StatTitle>
-                    <StatSubitle>Какой-то человек, Инвестиционный директор</StatSubitle>
+                    <StatTitle>Разработанные инструменты ИИ</StatTitle>
                 </Container>
                 <StatisticsContainer>
                     {StatData.map((item, index) => (

@@ -33,7 +33,7 @@ export const Overlay = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(90deg, #ff9cf3, #cfa8ff);
+  background: linear-gradient(90deg, #758BFB, #9104FD);
   text-align: center;
   padding: 10px;
   border-radius: 0 0 12px 12px;
@@ -90,22 +90,25 @@ export const TestTitle = styled.div`
 
 export const CompContainer = styled.div`
     width: 325px;
-    height: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 `
 export const SubCompContainer = styled.div`
-    height: 180px;
+    height: auto;
     width: 340px;
 `
 export const SubCompTitle = styled.div`
-    width: 120px;
-    height: 24px;
+    width: 100%;
+    height: auto;
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
 `
 export const SubCompSubtitle = styled.div`
-    width: 325px;
-    height: 120px;
+    width: 100%;
+    height: auto;
     font-size: 14px;
     line-height: 24px;
 `
@@ -122,6 +125,7 @@ export const StatTitle = styled.div`
     font-size: 30px;
     line-height: 51px;
     margin-top: 100px;
+    text-align: center;
 `
 
 export const StatSubitle = styled.div`
@@ -140,13 +144,12 @@ export const Amount = styled.div`
 `
 
 export const MainFooterContainer = styled.div`
-    /* background-color: #8257fe; */
     width: 100%;
     height: 300px;
     background-color: #fff;
 `
 export const PartnerContainer = styled.div`
-    width: 60%;
+    width: 70%;
     margin: 50px auto 0 auto;
     display: flex;
     justify-content: space-between;
