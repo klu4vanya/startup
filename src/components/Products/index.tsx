@@ -12,19 +12,37 @@ export default function Products() {
                 </TitleCategory>
             </CategoryContainer>
             <Container>
-                <ProductName>Pathology Assistant</ProductName>
+                <ProductName>DentalPath</ProductName>
                 <Line />
                 <ProductSubtitleContainer>
-                    <ProductSubtitle>Система поддержки принятия врачебных решений, продукт, оптимизирующий диагностический процесс, являющийся инструментом для дифференциальной диагностики и
-                        объективизации диагностики, по аналогии с гистологическими атласами…{'\u00A0'}
-                        <MoreButton to="/pathologyAssistant">Подробнее</MoreButton>
+                    <ProductSubtitle>  Программа распознавание новообразований ротовой полости. Программное обеспечение для пациентов и врачей-стоматологов.
+                        {'\u00A0'}
+                        <MoreButton to="/dentalPath">Подробнее</MoreButton>
                     </ProductSubtitle>
                 </ProductSubtitleContainer>
-                <ProductName>Digital Pathology Collaboration</ProductName>
+                <ProductName>DermaSlide</ProductName>
                 <Line />
                 <ProductSubtitleContainer>
-                    <ProductSubtitle>Программное обеспечение являющееся аналогом multi-head микроскопа, позволяющее проводить образовательные мероприятия для патологов…{'\u00A0'}
-                    <MoreButton to="/digitalPathology">Подробнее</MoreButton>
+                    <ProductSubtitle>Программа анализа дерматоскопических изображений кожи. Возможность
+                        получения второго мнения при диагностическом осмотре для врачей дерматологов.
+                        {'\u00A0'}
+                        <MoreButton to="/dermaSlide">Подробнее</MoreButton>
+                    </ProductSubtitle>
+                </ProductSubtitleContainer>
+                <ProductName>BreastCancer</ProductName>
+                <Line />
+                <ProductSubtitleContainer>
+                    <ProductSubtitle>  Определение рака молочной железы в полнослайдовых изображениях.
+                        {'\u00A0'}
+                        <MoreButton to="/breastCr">Подробнее</MoreButton>
+                    </ProductSubtitle>
+                </ProductSubtitleContainer>
+                <ProductName>Covid-19</ProductName>
+                <Line />
+                <ProductSubtitleContainer>
+                    <ProductSubtitle> Оценка иммунного ответа в цифровых гистологических изображениях легких.
+                        {'\u00A0'}
+                        <MoreButton to="/covid-19">Подробнее</MoreButton>
                     </ProductSubtitle>
                 </ProductSubtitleContainer>
             </Container>
