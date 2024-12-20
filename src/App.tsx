@@ -12,6 +12,7 @@ import DermaSlide from './components/Products/DermaSlide';
 import DentalPath from './components/Products/DentalPath';
 import Covid19 from './components/Products/Covid-19';
 import BreastCancer from './components/Products/BreastCancer';
+import Archive from './components/Archive';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path='/pathAI' element={<PathAi />} />
             <Route path='/histArch' element={<HistArch />} />
             <Route path='/docAI' element={<DocAI />} />
+            <Route path='/archive' element={<Archive />} />
           </Routes>
         </HashRouter>
     </div>
