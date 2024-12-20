@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/startup/static/css/main.81b5b150.css",
-    "main.js": "/startup/static/js/main.bc843d61.js",
+    "main.js": "/startup/static/js/main.a39a5d97.js",
     "static/js/453.e94d72af.chunk.js": "/startup/static/js/453.e94d72af.chunk.js",
     "static/media/background.png": "/startup/static/media/background.c8538f59237fad76ee38.png",
     "static/media/Breast_cancer_img.jpg": "/startup/static/media/Breast_cancer_img.c342c9c272135d588795.jpg",
@@ -18,7 +18,9 @@
     "static/media/pathai_1.png": "/startup/static/media/pathai_1.a5fe5041e32870250484.png",
     "static/media/logo.png": "/startup/static/media/logo.4f687ed51fdf353282cf.png",
     "static/media/HistArch.png": "/startup/static/media/HistArch.949eb69fdc4e5c37fd28.png",
+    "static/media/Cardimg_1.jpg": "/startup/static/media/Cardimg_1.4e52f05f6b491b3c072a.jpg",
     "static/media/Covid-19_img.jpg": "/startup/static/media/Covid-19_img.7fd23cd58d57912a8019.jpg",
+    "static/media/Cardimg_2.jpg": "/startup/static/media/Cardimg_2.b7e611020584101b8773.jpg",
     "static/media/логотип партнера 6.png": "/startup/static/media/логотип партнера 6.1760c07e23a25a333c68.png",
     "static/media/логотип партнера 5.jpg": "/startup/static/media/логотип партнера 5.1e2a2f490a88d8e4a130.jpg",
     "static/media/логотип парнера 2.jpg": "/startup/static/media/логотип парнера 2.3f712d393caaa191ed80.jpg",
@@ -27,13 +29,14 @@
     "static/media/логотип партнёра 3.jpg": "/startup/static/media/логотип партнёра 3.3d90fbf2a3fed03b0caf.jpg",
     "static/media/vk-icon.svg": "/startup/static/media/vk-icon.ebdcc8ebf3291c412785dd2bda72b030.svg",
     "index.html": "/startup/index.html",
+    "static/media/filter_icon.svg": "/startup/static/media/filter_icon.7f8899c92459cae2d50a48aa5055e17d.svg",
     "static/media/tg-icon.svg": "/startup/static/media/tg-icon.8a224561e4db6d1324413ac87ec42d36.svg",
     "main.81b5b150.css.map": "/startup/static/css/main.81b5b150.css.map",
-    "main.bc843d61.js.map": "/startup/static/js/main.bc843d61.js.map",
+    "main.a39a5d97.js.map": "/startup/static/js/main.a39a5d97.js.map",
     "453.e94d72af.chunk.js.map": "/startup/static/js/453.e94d72af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b5b150.css",
-    "static/js/main.bc843d61.js"
+    "static/js/main.a39a5d97.js"
   ]
 }
