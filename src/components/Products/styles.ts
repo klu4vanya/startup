@@ -74,6 +74,9 @@ export const ProductSubtitle = styled.div`
     line-height: 24px;
     color: #666666;
 
+    & > span{
+        font-weight: bold;
+    }
 `
 export const MoreButton = styled(Link)`
     width: 83px;
