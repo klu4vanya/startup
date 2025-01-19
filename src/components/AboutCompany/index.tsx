@@ -3,7 +3,7 @@ import { Container, MoreButton, ProductSubtitle, ProductSubtitleContainer } from
 import { MainSubitle, MainTitle } from '../Main/styles'
 import honov from '../../assets/honov.jpg'
 import glashov from '../../assets/нр1.png'
-import { StyledCarousel } from './styles';
+import { StyledCarousel, StyledMainTitle } from './styles';
 import { Paper } from '@mui/material';
 import empty_photo from '../../assets/empty_photo.jpg'
 
@@ -41,9 +41,9 @@ export default function AboutCompany() {
             >
                 Наша компания специализируется на разработке программного обеспечения в области цифровой патологии, стремясь интегрировать передовые технологии для повышения эффективности и точности патоморфологических исследований.
             </MainSubitle>
-            <MainTitle>
+            <StyledMainTitle>
                 О компании
-            </MainTitle>
+            </StyledMainTitle>
             <MainSubitle
                 style={{
                     textAlign: 'left'
@@ -51,9 +51,9 @@ export default function AboutCompany() {
             >
                 CALADRIUS - ведущим разработчиком программных решений, предназначенных для преобразования традиционных методов патоморфологической диагностики в цифровой формат. Наша миссия заключается в создании инновационных инструментов, которые способствуют улучшению качества медицинских услуг.
             </MainSubitle>
-            <MainTitle>
+            <StyledMainTitle>
                 Наши решения
-            </MainTitle>
+            </StyledMainTitle>
             <MainSubitle
                 style={{
                     textAlign: 'left'
@@ -75,9 +75,9 @@ export default function AboutCompany() {
                     <span>Хранение и управление данными:</span> созданные системы обеспечивают надежное хранение цифровых слайдов в стандартизированном формате, что облегчает доступ и обмен информацией между медицинскими учреждениями.<br />
                 </ProductSubtitle>
             </ProductSubtitleContainer>
-            <MainTitle>
+            <StyledMainTitle>
                 Преимущества наших решений
-            </MainTitle>
+            </StyledMainTitle>
             <ProductSubtitleContainer
                 style={{
                     display: 'flex',
@@ -92,9 +92,9 @@ export default function AboutCompany() {
                     <span>Дистанционное консультирование:</span>  цифровые слайды могут быть легко переданы для удаленного анализа, обеспечивая доступ к экспертному мнению независимо от географического положения.<br />
                 </ProductSubtitle>
             </ProductSubtitleContainer>
-            <MainTitle>
+            <StyledMainTitle>
                 Руководители проекта:
-            </MainTitle>
+            </StyledMainTitle>
             <StyledCarousel className="rounded-xl" navButtonsAlwaysVisible autoPlay={false}
                 sx={{ width: 'auto', height: '650px' }}>
                 {images.map((item, index) => (
@@ -122,7 +122,7 @@ export default function AboutCompany() {
                                 src={item.src}
                                 alt={`Slide ${index}`}
                             />
-                            <MainTitle
+                            <StyledMainTitle
                                 style={{
                                     marginTop: "35px",
                                     textAlign: "center",
@@ -130,7 +130,7 @@ export default function AboutCompany() {
                                 }}
                             >
                                 {item.name}
-                            </MainTitle>
+                            </StyledMainTitle>
                             <MainSubitle
                                 style={{
                                     marginTop: "35px",

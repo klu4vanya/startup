@@ -1,6 +1,21 @@
 import { Button, TextField } from "@mui/material";
 import styled from "styled-components";
 
+export const ContactContainer = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+export const ContactWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  gap: 5%;
+`
 export const FormContainer = styled.div`
     width: 430px;
     height: 594px;
@@ -9,7 +24,7 @@ export const FormContainer = styled.div`
     gap: 5%;
 `
 export const FormTitle = styled.div`
-    width: 290px;
+    width: 420px;
     height: auto;
     font-size: 52px;
     line-height: 1.3em;
@@ -58,10 +73,25 @@ export const MapContainer = styled.div`
 
 `
 export const AboutContainer = styled.div`
+    display: grid;
+    /* gap: 7%; */
     width: 416px;
     height: auto;
     font-size: 16px;
     line-height: 1.3em;
     margin-bottom: 28px;
     
+   & > span {
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 5%;
+    }
+`
+
+export const IconAndSpanContainer = styled.div`
+  width: 350px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
