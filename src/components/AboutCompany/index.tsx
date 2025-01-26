@@ -1,11 +1,13 @@
 import React from 'react'
 import { Container, MoreButton, ProductSubtitle, ProductSubtitleContainer } from '../Products/styles'
 import { MainSubitle, MainTitle } from '../Main/styles'
-import honov from '../../assets/honov.jpg'
+import honov from '../../assets/honov2.jpg'
 import glashov from '../../assets/нр1.png'
-import { StyledCarousel, StyledMainTitle } from './styles';
+import kluchnik from '../../assets/kluchnik.jpg'
+import {  LeaderShipContainer, StyledMainTitle } from './styles';
 import { Paper } from '@mui/material';
 import empty_photo from '../../assets/empty_photo.jpg'
+import LeaderCard from './LeaderCard'
 
 const images = [
     {
@@ -19,7 +21,7 @@ const images = [
         job: 'CTO'
     },
     {
-        src: empty_photo,
+        src: kluchnik,
         name: 'Ключник Иван Павлович',
         job: 'Senior Director of Marketing'
     },
@@ -95,55 +97,16 @@ export default function AboutCompany() {
             <StyledMainTitle>
                 Руководители проекта:
             </StyledMainTitle>
-            <StyledCarousel className="rounded-xl" navButtonsAlwaysVisible autoPlay={false}
-                sx={{ width: 'auto', height: '650px' }}>
+            <LeaderShipContainer>
                 {images.map((item, index) => (
-                    <div
-                        key={index}
-                        style={{
-                            width: 'auto',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            height: '500px'
-                        }}
-                    >
-                        <Paper
-                            key={index}
-                            style={{
-                                display: "flex",
-                                flexDirection: "column",
-                                alignItems: "center",
-                                justifyContent: "space-between",
-                                height: '500px'
-                            }}
-                        >
-                            <img
-                                src={item.src}
-                                alt={`Slide ${index}`}
-                            />
-                            <StyledMainTitle
-                                style={{
-                                    marginTop: "35px",
-                                    textAlign: "center",
-                                    zIndex: '999'
-                                }}
-                            >
-                                {item.name}
-                            </StyledMainTitle>
-                            <MainSubitle
-                                style={{
-                                    marginTop: "35px",
-                                    textAlign: "center",
-                                    zIndex: '999'
-                                }}
-                            >
-                                {item.job}
-                            </MainSubitle>
-                        </Paper>
-                    </div>
+                    <LeaderCard 
+                        src={item.src}
+                        title={item.name}
+                        subtitle={item.job}
+                    />
+                    
                 ))}
-            </StyledCarousel>
+            </LeaderShipContainer>
         </Container>
     )
 }
