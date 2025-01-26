@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/startup/static/css/main.81b5b150.css",
-    "main.js": "/startup/static/js/main.65a5b5bb.js",
-    "static/js/453.1dd533fa.chunk.js": "/startup/static/js/453.1dd533fa.chunk.js",
-    "static/media/honov.jpg": "/startup/static/media/honov.c2dfc8d52055e86453bd.jpg",
+    "main.js": "/startup/static/js/main.39c7a009.js",
+    "static/js/453.e94d72af.chunk.js": "/startup/static/js/453.e94d72af.chunk.js",
     "static/media/background.png": "/startup/static/media/background.c8538f59237fad76ee38.png",
     "static/media/Breast_cancer_img.jpg": "/startup/static/media/Breast_cancer_img.c342c9c272135d588795.jpg",
     "static/media/mainPage2.jpg": "/startup/static/media/mainPage2.10f8b0e641c4a6b93d1c.jpg",
     "static/media/mainPage1.png": "/startup/static/media/mainPage1.95ead53c6770caa5d447.png",
     "static/media/covid19.jpg": "/startup/static/media/covid19.e65e648fb01d54e33497.jpg",
     "static/media/нр1.png": "/startup/static/media/нр1.c097a36fbd5f5d513f7a.png",
+    "static/media/honov2.jpg": "/startup/static/media/honov2.5fd7f7645f68c334c751.jpg",
     "static/media/mainPage5.jpg": "/startup/static/media/mainPage5.da8098f880e1b42c0995.jpg",
     "static/media/DocAI.png": "/startup/static/media/DocAI.d3d71ba742bb06bef892.png",
     "static/media/Comp.png": "/startup/static/media/Comp.2fc52fc36da459fc9e4e.png",
     "static/media/mainPage3.jpg": "/startup/static/media/mainPage3.c2d3c2e327bb92fedc6e.jpg",
     "static/media/derma_slide_img.jpg": "/startup/static/media/derma_slide_img.5ae598b0c0d8187adc26.jpg",
+    "static/media/kluchnik.jpg": "/startup/static/media/kluchnik.9484983449806182ddd6.jpg",
     "static/media/mainPage4.jpg": "/startup/static/media/mainPage4.f69bf836d799edb587a8.jpg",
     "static/media/логотип партнера 1.jpg": "/startup/static/media/логотип партнера 1.c8f97cdd7bd9bf5aee31.jpg",
     "static/media/pathai_1.png": "/startup/static/media/pathai_1.a5fe5041e32870250484.png",
@@ -35,11 +36,11 @@
     "static/media/filter_icon.svg": "/startup/static/media/filter_icon.7f8899c92459cae2d50a48aa5055e17d.svg",
     "static/media/tg-icon.svg": "/startup/static/media/tg-icon.8a224561e4db6d1324413ac87ec42d36.svg",
     "main.81b5b150.css.map": "/startup/static/css/main.81b5b150.css.map",
-    "main.65a5b5bb.js.map": "/startup/static/js/main.65a5b5bb.js.map",
-    "453.1dd533fa.chunk.js.map": "/startup/static/js/453.1dd533fa.chunk.js.map"
+    "main.39c7a009.js.map": "/startup/static/js/main.39c7a009.js.map",
+    "453.e94d72af.chunk.js.map": "/startup/static/js/453.e94d72af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b5b150.css",
-    "static/js/main.65a5b5bb.js"
+    "static/js/main.39c7a009.js"
   ]
 }
