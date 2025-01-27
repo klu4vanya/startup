@@ -4,7 +4,12 @@ import { ProductsContainer, CategoryContainer, TitleCategory, Title, Subtitle, P
 
 export default function Products() {
     return (
-        <ProductsContainer>
+        <ProductsContainer
+            style={{
+                position: 'relative',
+                top: '190px'
+            }}
+        >
             <CategoryContainer>
                 <TitleCategory>
                     <Title>Продукты</Title>

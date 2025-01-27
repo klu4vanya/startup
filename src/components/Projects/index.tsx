@@ -3,7 +3,12 @@ import { CategoryContainer, Container, Line, MoreButton, ProductName, ProductsCo
 
 export default function Projects() {
     return (
-        <ProductsContainer>
+        <ProductsContainer
+            style={{
+                position: 'relative',
+                top: '190px'
+            }}
+        >
             <CategoryContainer>
                 <TitleCategory>
                     <Title>Образовательные проекты</Title>

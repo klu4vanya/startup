@@ -24,7 +24,12 @@ const CardInfo = [
 
 export default function Archive() {
     return (
-        <div>
+        <div
+            style={{
+                position: 'relative',
+                top: '190px'
+            }}
+        >
             <SearchContainer>
                 <FilterIcon />
                 <SearchWrapper>

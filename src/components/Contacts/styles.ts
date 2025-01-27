@@ -8,6 +8,9 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+  top: 190px;
 `
 export const ContactWrapper = styled.div`
   width: 100%;

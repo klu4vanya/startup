@@ -35,7 +35,12 @@ const images = [
 
 export default function AboutCompany() {
     return (
-        <Container>
+        <Container
+            style={{
+                position: 'relative',
+                top: '190px'
+            }}
+        >
             <MainSubitle
                 style={{
                     textAlign: 'left'
