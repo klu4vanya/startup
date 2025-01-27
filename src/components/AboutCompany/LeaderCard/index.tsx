@@ -13,7 +13,7 @@ export default function LeaderCard({src, title, subtitle}: LeaderCardProps) {
         <img
             src={src}
             style={{
-                width: '225px',
+                width: '100%',
                 height: 'auto',
                 borderRadius: '50%'
             }}

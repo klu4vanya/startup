@@ -4,10 +4,12 @@ import vk_icon from '../../assets/vk-icon.svg'
 import tg_icon from '../../assets/tg-icon.svg'
 
 export const HeaderContainer = styled.div`
-    margin-left: 10%;
-    margin-right: 10%;
-    
-    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
     height: 190px;
     background-color: #fff;
     

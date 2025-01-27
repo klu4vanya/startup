@@ -117,7 +117,12 @@ const Main: React.FC = () => {
     ]
 
     return (
-        <ProductsContainer>
+        <ProductsContainer
+            style={{
+                position: 'relative',
+                top: '190px'
+            }}
+        >
             <MainContainer>
                 {data.map((item, index) => (
                     <InfoCard key={index} image={item.image} label={item.label} />

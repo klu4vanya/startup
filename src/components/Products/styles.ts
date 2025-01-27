@@ -68,7 +68,7 @@ export const ProductSubtitleContainer = styled.div`
 `
 export const ProductSubtitle = styled.div`
     width: 94%;
-    height: 42px;
+    height: auto;
     margin: 0 auto;
     font-size: 13px;
     line-height: 24px;

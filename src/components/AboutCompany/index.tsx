@@ -68,7 +68,8 @@ export default function AboutCompany() {
                     display: 'flex',
                     alignItems: 'stretch',
                     marginTop: '3%',
-                    padding: '3%'
+                    padding: '3%',
+                    height: 'auto'
                 }}
             >
                 <ProductSubtitle>
@@ -85,7 +86,8 @@ export default function AboutCompany() {
                     display: 'flex',
                     alignItems: 'stretch',
                     marginTop: '3%',
-                    padding: '3%'
+                    padding: '3%',
+                    height: 'auto'
                 }}
             >
                 <ProductSubtitle>

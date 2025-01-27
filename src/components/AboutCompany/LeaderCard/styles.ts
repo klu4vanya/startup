@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardLeader = styled.div`
-    width: 225px;
+    width: calc(100vw*0.6/4);
     height: 330px;
 
 `

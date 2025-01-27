@@ -12,5 +12,6 @@ export const LeaderShipContainer = styled.div`
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
+    gap: 5%;
 `
 
