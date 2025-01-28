@@ -53,7 +53,7 @@ export const LogoContainer = styled.div`
     transform: rotate(90deg);
     @media (max-width: 768px) {
       height: 90px;
-      transform: rotate(90deg);
+      width: auto;
     }
   }
 
