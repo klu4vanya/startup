@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/startup/static/css/main.81b5b150.css",
-    "main.js": "/startup/static/js/main.7c67f2a6.js",
+    "main.js": "/startup/static/js/main.647cdf0e.js",
     "static/js/453.e94d72af.chunk.js": "/startup/static/js/453.e94d72af.chunk.js",
     "static/media/background.png": "/startup/static/media/background.c8538f59237fad76ee38.png",
     "static/media/Breast_cancer_img.jpg": "/startup/static/media/Breast_cancer_img.c342c9c272135d588795.jpg",
@@ -36,11 +36,11 @@
     "static/media/filter_icon.svg": "/startup/static/media/filter_icon.7f8899c92459cae2d50a48aa5055e17d.svg",
     "static/media/tg-icon.svg": "/startup/static/media/tg-icon.8a224561e4db6d1324413ac87ec42d36.svg",
     "main.81b5b150.css.map": "/startup/static/css/main.81b5b150.css.map",
-    "main.7c67f2a6.js.map": "/startup/static/js/main.7c67f2a6.js.map",
+    "main.647cdf0e.js.map": "/startup/static/js/main.647cdf0e.js.map",
     "453.e94d72af.chunk.js.map": "/startup/static/js/453.e94d72af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b5b150.css",
-    "static/js/main.7c67f2a6.js"
+    "static/js/main.647cdf0e.js"
   ]
 }
