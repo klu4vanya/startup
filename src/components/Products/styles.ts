@@ -61,6 +61,10 @@ export const ProductName = styled.div`
   text-transform: uppercase;
 
   margin-top: 94px;
+
+  @media (max-width: 768px){
+    margin-top: 15%;
+  }
 `;
 
 export const Line = styled.div`

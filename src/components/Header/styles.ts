@@ -14,7 +14,7 @@ export const HeaderContainer = styled.div`
   background-color: #fff;
   @media (max-width: 768px) {
     width: 100vw;
-    height: 90px;
+    height: 118px;
     padding: 0;
   }
 `;
