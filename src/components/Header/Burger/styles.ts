@@ -1,20 +1,29 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const HumburgerMenuContainer = styled.div`
-  position: absolute;
-  top: 100px;
-  left: 10%;
-  right: 10%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 10px;
-  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e2e2e2;
+  opacity: 0.9;
+  z-index: 0;
+`;
+
+export const MenuWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  gap: 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-`;
+
+  & > * {
+    font-size: 35px;
+    line-height: 1.3em;
+  }
+`
 export const GlobalStyle = createGlobalStyle`
   /* Переопределяем стили для компонента из node_modules */
   .hamburger-react {
@@ -22,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 768px) {
       display: block !important;
+      z-index: 1000;
     }
   }
 `;

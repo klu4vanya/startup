@@ -75,7 +75,8 @@ export const AboutWrapper = styled.div`
   padding-top: 3%;
 
   @media (max-width: 768px) {
-    padding-left: 3%;
+    width: 90%;
+    margin: 0 auto;
   }
 `;
 export const AboutContainer = styled.div`

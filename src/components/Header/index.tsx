@@ -49,11 +49,11 @@ function Header() {
           <TextSpan to="/contacts">Контакты</TextSpan>
           <TextSpan to="/auth">Вход</TextSpan>
         </AboutContainer>
-        <Burger />
         <SocialNetworkContainer>
           <TelegramIcon to="#" />
           <VKIcon to="#" />
         </SocialNetworkContainer>
+        <Burger />
       </AboutWrapper>
     </HeaderContainer>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GlobalStyle, HumburgerMenuContainer } from "./styles";
+import { GlobalStyle, HumburgerMenuContainer, MenuWrapper } from "./styles";
 import { Fade as Hamburger } from "hamburger-react";
 import { TextSpan } from "../styles";
 
@@ -18,13 +18,15 @@ export default function Burger() {
 
       {isOpen && (
         <HumburgerMenuContainer>
-            <TextSpan to="/main">Главная</TextSpan>
-            <TextSpan to="/products">Продукты</TextSpan>
-            <TextSpan to="/projects">Проекты</TextSpan>
-            <TextSpan to="/archive">Архив</TextSpan>
-            <TextSpan to="/about">О компании</TextSpan>
-            <TextSpan to="/contacts">Контакты</TextSpan>
-            <TextSpan to="/auth">Вход</TextSpan>
+          <MenuWrapper>
+            <TextSpan onClick={() => setOpen(false)} to="/main">Главная</TextSpan>
+            <TextSpan onClick={() => setOpen(false)} to="/products">Продукты</TextSpan>
+            <TextSpan onClick={() => setOpen(false)} to="/projects">Проекты</TextSpan>
+            <TextSpan onClick={() => setOpen(false)} to="/archive">Архив</TextSpan>
+            <TextSpan onClick={() => setOpen(false)} to="/about">О компании</TextSpan>
+            <TextSpan onClick={() => setOpen(false)} to="/contacts">Контакты</TextSpan>
+            <TextSpan onClick={() => setOpen(false)} to="/auth">Вход</TextSpan>
+          </MenuWrapper>
         </HumburgerMenuContainer>
       )}
     </div>
