@@ -13,5 +13,10 @@ export const LeaderShipContainer = styled.div`
     justify-content: space-around;
     margin-top: 5%;
     gap: 5%;
+
+    @media (max-width: 768px){
+        display: block;
+        gap: 0;
+    }
 `
 
