@@ -15,6 +15,7 @@ import BreastCancer from './components/Products/BreastCancer';
 import Archive from './components/Archive';
 import AboutCompany from './components/AboutCompany';
 import Contacts from './components/Contacts';
+import Register from './components/Auth/Register';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path='/archive' element={<Archive />} />
             <Route path='/about' element={<AboutCompany />} />
             <Route path='/contacts' element={<Contacts />} />
+            <Route path='/register' element={<Register />} />
           </Routes>
         </HashRouter>
     </div>

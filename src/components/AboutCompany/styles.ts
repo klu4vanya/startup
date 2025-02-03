@@ -8,7 +8,7 @@ export const StyledMainTitle = styled(MainTitle)`
 
 export const LeaderShipContainer = styled.div`
     width: 100%;
-    height: 250px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     margin-top: 5%;

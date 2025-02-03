@@ -1,4 +1,5 @@
 import { Button, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
@@ -131,10 +132,12 @@ export const DontHaveAccTitle = styled.div`
     line-height: 20px;
 `
 
-export const CreateAcc = styled.div`
+export const CreateAcc = styled(Link)`
     width: 90px;
     height: 20px;
     color: #4500ff;
     font-size: 12px;
     line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
 `

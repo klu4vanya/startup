@@ -224,7 +224,7 @@ export const MainFooterContainer = styled.div`
   background-color: #fff;
 `;
 export const PartnerContainer = styled.div`
-  width: 70%;
+  width: 90%;
   margin: 50px auto 0 auto;
   display: flex;
   justify-content: space-between;

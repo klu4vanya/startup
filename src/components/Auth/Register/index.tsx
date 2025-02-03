@@ -4,9 +4,6 @@ import {
   AuthTitle,
   BackGroundWrapper,
   BazaFrom,
-  CreateAcc,
-  DontHaveAcc,
-  DontHaveAccTitle,
   FormContainer,
   FormWrapper,
   LoginPasswordContainer,
@@ -14,13 +11,12 @@ import {
   SignInFromContainer,
   StyledButton,
   StyledTextField,
-} from "./styles";
-import Background from "../../assets/background.png";
-import Logo from "../../assets/logo.png";
+} from "../styles";
 import { Box } from "@mui/material";
-import Register from "./Register";
+import Background from "../../../assets/background.png";
+import Logo from "../../../assets/logo.png";
 
-export default function Auth() {
+export default function Register() {
   return (
     <AuthContainer
       style={{
@@ -46,8 +42,12 @@ export default function Auth() {
           </LogoFromContainer>
           <SignInFromContainer>
             <BazaFrom>
-              <AuthTitle>Рады видеть вас снова</AuthTitle>
-              <LoginPasswordContainer>
+              <AuthTitle>Регистрация</AuthTitle>
+              <LoginPasswordContainer
+                style={{
+                    height: '250px'
+                }}
+              >
                 <Box
                   component="form"
                   noValidate
@@ -97,14 +97,29 @@ export default function Auth() {
                       },
                     }}
                   />
-                  <StyledButton variant="contained">Войти</StyledButton>
+                  <StyledTextField
+                    required
+                    id="outlined-required"
+                    label="Электронная почта"
+                    sx={{
+                      "& .MuiFormLabel-root": {
+                        color: "#4500ff !important", // Цвет метки в обычном состоянии
+                      },
+                      "& .MuiInputLabel-root.Mui-focused": {
+                        color: "#4500ff !important", // Цвет метки при фокусе
+                      },
+                      "& .MuiInputLabel-root.MuiInputLabel-shrink": {
+                        color: "#4500ff !important", // Цвет перемещённой метки
+                      },
+                      "& .MuiFormLabel-root-MuiInputLabel-root.Mui-focused": {
+                        color: "#4500ff !important",
+                      },
+                    }}
+                  />
+                  <StyledButton variant="contained">Зарегистрироваться</StyledButton>
                 </Box>
               </LoginPasswordContainer>
             </BazaFrom>
-            <DontHaveAcc>
-              <DontHaveAccTitle>Нет Аккаунта?</DontHaveAccTitle>
-              <CreateAcc to='/register'>Создайте его</CreateAcc>
-            </DontHaveAcc>
           </SignInFromContainer>
         </FormContainer>
       </FormWrapper>
