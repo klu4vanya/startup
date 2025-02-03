@@ -1,7 +1,8 @@
 import React from 'react'
-import { ProductsContainer, CategoryContainer, TitleCategory, Title, Container, ProductSubtitle } from '../styles'
+import { ProductsContainer, CategoryContainer, TitleCategory, Title } from '../styles'
 import Breast_cancer_img from '../../../assets/Breast_cancer_img.jpg'
 import { ImagesContainer } from '../../Projects/Path AI/styles'
+import { BreastSubtitle, Container } from './styles'
 
 
 export default function BreastCancer() {
@@ -16,17 +17,10 @@ export default function BreastCancer() {
                     >BreastCancer</Title>
                 </TitleCategory>
             </CategoryContainer>
-            <Container
-                style={{
-                    display: 'flex',
-                    gap: '20px'
-                }}
-            >
-                <ProductSubtitle
-                    style={{ margin: '50px 0 0 0', width: '60%' }}
-                >
+            <Container>
+                <BreastSubtitle>
                    Определение рака молочной железы в полнослайдовых изображениях.
-                </ProductSubtitle>
+                </BreastSubtitle>
                 <ImagesContainer>
                     <img 
                         src={Breast_cancer_img}

@@ -1,6 +1,7 @@
-import { ProductsContainer, CategoryContainer, TitleCategory, Title, Container, ProductSubtitle } from '../../Products/styles'
+import { ProductsContainer, CategoryContainer, TitleCategory, Title } from '../../Products/styles'
 import Dental_path_img from '../../../assets/dental_path_img.jpg'
 import { ImagesContainer } from '../../Projects/Path AI/styles'
+import { BreastSubtitle, Container } from '../BreastCancer/styles'
 
 
 export default function DentalPath() {
@@ -15,20 +16,17 @@ export default function DentalPath() {
                     >DentalPath</Title>
                 </TitleCategory>
             </CategoryContainer>
-            <Container
-                style={{
-                    display: 'flex',
-                    gap: '20px'
-                }}
-            >
-                <ProductSubtitle
-                    style={{ margin: '50px 0 0 0', width: '60%' }}
-                >
+            <Container>
+                <BreastSubtitle>
                    Программа распознавание новообразований ротовой полости. Программное обеспечение для пациентов и врачей-стоматологов. 
-                </ProductSubtitle>
+                </BreastSubtitle>
                 <ImagesContainer>
                     <img 
                         src={Dental_path_img}
+                        style={{
+                            width: '100%',
+                            height: 'auto'
+                        }}
                     />
                 </ImagesContainer>
             </Container>

@@ -86,12 +86,21 @@ export const ProductSubtitle = styled.div`
   width: 94%;
   height: auto;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 24px;
   color: #666666;
 
   & > span {
     font-weight: bold;
+    font-size: 18px;
+  }
+  @media (max-width: 768px){
+    font-size: 14px;
+    line-height: 20px;
+    & > span {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 `;
 export const MoreButton = styled(Link)`

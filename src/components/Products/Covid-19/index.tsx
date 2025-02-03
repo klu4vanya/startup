@@ -1,7 +1,8 @@
 import React from 'react'
-import { ProductsContainer, CategoryContainer, TitleCategory, Title, Container, ProductSubtitle } from '../../Products/styles'
+import { ProductsContainer, CategoryContainer, TitleCategory, Title } from '../../Products/styles'
 import Covid_19_img from '../../../assets/Covid-19_img.jpg'
 import { ImagesContainer } from '../../Projects/Path AI/styles'
+import { BreastSubtitle, Container } from '../BreastCancer/styles'
 
 
 export default function Covid19() {
@@ -16,20 +17,17 @@ export default function Covid19() {
                     >Covid-19</Title>
                 </TitleCategory>
             </CategoryContainer>
-            <Container
-                style={{
-                    display: 'flex',
-                    gap: '20px'
-                }}
-            >
-                <ProductSubtitle
-                    style={{ margin: '50px 0 0 0', width: '60%' }}
-                >
+            <Container>
+                <BreastSubtitle>
                    Оценка иммунного ответа в цифровых гистологических изображениях легких.
-                </ProductSubtitle>
+                </BreastSubtitle>
                 <ImagesContainer>
                     <img 
                         src={Covid_19_img}
+                        style={{
+                            width: '100%',
+                            height: 'auto'
+                        }}
                     />
                 </ImagesContainer>
             </Container>

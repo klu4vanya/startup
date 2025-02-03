@@ -59,7 +59,8 @@ export const MainTitle = styled.div`
   width: 80%;
   margin: 97px auto 0 auto;
   height: auto;
-  font-size: 23px;
+  font-size: 24px;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1.3em;
   text-align: center;
@@ -75,11 +76,11 @@ export const MainSubitle = styled.div`
   width: 100%;
   height: auto;
   margin-top: 44px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.3em;
   text-align: center;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
   }
 `;
