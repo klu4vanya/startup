@@ -9,6 +9,10 @@ export const SearchContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    @media (max-width: 768px){
+      width: 90%;
+      height: 34px;
+    }
 `
 export const FilterIcon = styled.div`
     background-image: url(${filter_icon});
@@ -23,6 +27,10 @@ export const SearchWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 768px){
+      width: 90%;
+      height: 100%;
+    }
 `
 export const SearchTitle = styled.div`
     width: 73px;
@@ -32,37 +40,44 @@ export const SearchTitle = styled.div`
     font-weight: 400;
     line-height: 29px;
     margin: 12px 33px 13px 21px;
+    @media (max-width: 768px){
+      font-size: 20px;
+    }
 `
 
 export const StyledTextfield = styled(TextField)`
   width: 845px;
-  height: 45px;
+  height: 100%;
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-left: 2px;
   .MuiInputBase-root {
-    height: 45px;
-    width: 845px;
+    height: 100%;
+    width: 100%;
   }
   .MuiOutlinedInput-root {
     border-radius: 20px;
-    width: 845px;
+    width: 100%;
   }
   .MuiInputLabel-root {
     background-color: white;
     padding: 0 5px;
     border-radius: 20px;
-    width: 845px;
+    width: 100%;
   }
   .MuiFormControl-root {
     margin-left: 4px;
-    width: 845px;
+    width: 100%;
   }
 `
 export const DataContainer = styled.div`
     width: 1050px;
     height: 100vh;
     margin: 100px auto 0 auto;
+    @media (max-width: 768px){
+      width: 100%;
+      height: auto;
+    }
 `
 export const CheckAllContainer = styled.div`
     width: 176px;
