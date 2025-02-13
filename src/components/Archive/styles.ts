@@ -47,7 +47,7 @@ export const SearchTitle = styled.div`
 
 export const StyledTextfield = styled(TextField)`
   width: 845px;
-  height: 100%;
+  height: 100%hello;
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-left: 2px;

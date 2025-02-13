@@ -15,10 +15,9 @@ import {
   StyledButton,
   StyledTextField,
 } from "./styles";
-import Background from "../../assets/background.png";
+import Background from "../../assets/background.jpeg";
 import Logo from "../../assets/logo.png";
 import { Box } from "@mui/material";
-import Register from "./Register";
 
 export default function Auth() {
   return (
@@ -46,7 +45,7 @@ export default function Auth() {
           </LogoFromContainer>
           <SignInFromContainer>
             <BazaFrom>
-              <AuthTitle>Рады видеть вас снова</AuthTitle>
+              <AuthTitle>Рады видеть Вас снова</AuthTitle>
               <LoginPasswordContainer>
                 <Box
                   component="form"
@@ -102,7 +101,7 @@ export default function Auth() {
               </LoginPasswordContainer>
             </BazaFrom>
             <DontHaveAcc>
-              <DontHaveAccTitle>Нет Аккаунта?</DontHaveAccTitle>
+              <DontHaveAccTitle>Нет аккаунта?</DontHaveAccTitle>
               <CreateAcc to='/register'>Создайте его</CreateAcc>
             </DontHaveAcc>
           </SignInFromContainer>

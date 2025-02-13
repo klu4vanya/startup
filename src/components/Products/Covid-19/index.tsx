@@ -19,7 +19,7 @@ export default function Covid19() {
             </CategoryContainer>
             <Container>
                 <BreastSubtitle>
-                   Оценка иммунного ответа в цифровых гистологических изображениях легких.
+                Оценка иммунного ответа в цифровых гистологических изображениях легких пациентов при COVID-19.
                 </BreastSubtitle>
                 <ImagesContainer>
                     <img 

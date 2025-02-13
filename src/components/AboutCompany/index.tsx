@@ -4,8 +4,8 @@ import { MainSubitle, MainTitle } from '../Main/styles'
 import honov from '../../assets/honov2.jpg'
 import glashov from '../../assets/нр1.png'
 import kluchnik from '../../assets/kluchnik.jpg'
+import naumov from '../../assets/naumov.jpg'
 import {  LeaderShipContainer, StyledMainTitle } from './styles';
-import { Paper } from '@mui/material';
 import empty_photo from '../../assets/empty_photo.jpg'
 import LeaderCard from './LeaderCard'
 
@@ -16,7 +16,7 @@ const images = [
         job: 'CEO, Founder'
     },
     {
-        src: empty_photo,
+        src: naumov,
         name: 'Наумов Сергей Алексеевич',
         job: 'CTO'
     },
@@ -56,7 +56,7 @@ export default function AboutCompany() {
                     textAlign: 'left'
                 }}
             >
-                CALADRIUS -  являетсяведущим разработчиком программных решений, предназначенных для преобразования традиционных методов патоморфологической диагностики в цифровой формат. Наша миссия заключается в создании инновационных инструментов, которые способствуют улучшению качества медицинских услуг.
+                CALADRIUS — ведущий разработчик программных решений, предназначенных для преобразования традиционных методов патоморфологической диагностики в цифровой формат. Наша миссия заключается в создании инновационных инструментов, которые способствуют улучшению качества медицинских услуг.
             </MainSubitle>
             <StyledMainTitle>
                 Наши решения

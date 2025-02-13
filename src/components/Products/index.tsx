@@ -13,7 +13,7 @@ export default function Products() {
             <CategoryContainer>
                 <TitleCategory>
                     <Title>Продукты</Title>
-                    <Subtitle>Сервисы и программы в области цифровой патологоанатомии</Subtitle>
+                    <Subtitle>Сервисы и программы в области цифровой патологии</Subtitle>
                 </TitleCategory>
             </CategoryContainer>
             <Container>
