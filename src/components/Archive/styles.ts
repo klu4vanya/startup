@@ -51,13 +51,16 @@ export const StyledTextfield = styled(TextField)`
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-left: 2px;
+  padding: 0;
   .MuiInputBase-root {
     height: 100%;
     width: 100%;
+    padding: 0;
   }
   .MuiOutlinedInput-root {
     border-radius: 20px;
     width: 100%;
+    padding: 0;
   }
   .MuiInputLabel-root {
     background-color: white;
@@ -68,6 +71,11 @@ export const StyledTextfield = styled(TextField)`
   .MuiFormControl-root {
     margin-left: 4px;
     width: 100%;
+    padding: 0;
+  }
+  .MuiOutlinedInput-input{
+    padding: 0;
+    font-size: 30px;
   }
 `
 export const DataContainer = styled.div`

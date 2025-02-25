@@ -42,7 +42,7 @@ export default function Archive() {
     <div
       style={{
         position: "relative",
-        top: "190px",
+        top: "195px",
       }}
     >
       <SearchContainer>
