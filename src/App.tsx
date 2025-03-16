@@ -16,6 +16,7 @@ import Archive from './components/Archive';
 import AboutCompany from './components/AboutCompany';
 import Contacts from './components/Contacts';
 import Register from './components/Auth/Register';
+import Canvas from './components/Canvas';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path='/about' element={<AboutCompany />} />
             <Route path='/contacts' element={<Contacts />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/canvas' element={<Canvas />} />
           </Routes>
         </HashRouter>
     </div>

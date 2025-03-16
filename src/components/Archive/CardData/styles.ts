@@ -48,6 +48,14 @@ export const CardInfo = styled.div`
     height: auto;
   }
 `;
+
+export const CardCanvasContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+
 export const CardInfoTitle = styled.div`
   width: 127px;
   height: 44px;
