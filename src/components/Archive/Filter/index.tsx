@@ -96,6 +96,12 @@ function FilterModal() {
     'Нос'
   ]
 
+  const diagnosis = [
+    'Меланома',
+    'Невус с диспалазией',
+    'Синий невус'
+  ]
+
   return (
     <FilterContainer>
       <Box>
@@ -181,7 +187,7 @@ function FilterModal() {
                   label="Выберите дату"
                   value={date}
                   onChange={handleDateChange}
-                  slotProps={{ textField: { fullWidth: true } }} // Используем slotProps для кастомизации TextField
+                  slotProps={{ textField: { fullWidth: true } }}
                 />
               ) : (
                 <DateRangePicker
@@ -202,6 +208,15 @@ function FilterModal() {
               width: '100%'
             }}
             renderInput={(params) => <StyledTextField {...params} label="Органы" />}
+          />
+          <Autocomplete
+            disablePortal
+            options={diagnosis}
+            sx={{ 
+              margin: '5% auto 5% auto',
+              width: '100%'
+            }}
+            renderInput={(params) => <StyledTextField {...params} label="Диагноз" />}
           />
           <StyledButton variant="contained">Применить</StyledButton>
         </Box>

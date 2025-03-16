@@ -14,7 +14,7 @@ import { CardData } from "./CardData";
 import card_img_1 from "../../assets/Cardimg_1.jpg";
 import card_img_2 from "../../assets/Cardimg_2.jpg";
 import FilterModal from "./Filter";
-const CardInfo = [
+export const CardInfo = [
   {
     src: card_img_1,
     title: "123675",
