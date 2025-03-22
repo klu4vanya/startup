@@ -15,7 +15,6 @@ import {
 import { StyledButton } from "../../Auth/styles";
 import { useNavigate } from "react-router-dom";
 
-
 interface CardDataProps {
   src: string;
   title: string;
@@ -31,10 +30,13 @@ export const CardData: React.FC<CardDataProps> = ({
   chip,
   clinic,
 }) => {
-  const navigate = useNavigate()
-  const handleClick = () => {
-    navigate('/canvas')
-  }
+  const navigate = useNavigate();
+  const handleClickCanvas = () => {
+    navigate("/canvas");
+  };
+  const handleClickEdit = () => {
+    navigate("/editcard");
+  };
   return (
     <CardContainer>
       <Checkbox />
@@ -44,15 +46,26 @@ export const CardData: React.FC<CardDataProps> = ({
           <CardCanvasContainer>
             <CardInfoTitle>{title}</CardInfoTitle>
             <StyledButton
-            onClick={handleClick}
+              onClick={handleClickCanvas}
               style={{
-                width: "300px",
+                width: "200px",
                 backgroundColor: "#d9d9d9",
                 color: "#000",
-                textAlign: 'center'
+                textAlign: "center",
               }}
             >
               Разметить
+            </StyledButton>
+            <StyledButton
+              onClick={handleClickEdit}
+              style={{
+                width: "200px",
+                backgroundColor: "#758bfb",
+                color: "#000",
+                textAlign: "center",
+              }}
+            >
+              Редактировать
             </StyledButton>
           </CardCanvasContainer>
           <CardInfoSubitle>{subtitle}</CardInfoSubitle>

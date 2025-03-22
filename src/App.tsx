@@ -17,6 +17,7 @@ import AboutCompany from './components/AboutCompany';
 import Contacts from './components/Contacts';
 import Register from './components/Auth/Register';
 import Canvas from './components/Canvas';
+import CreatePdfForm from './components/Archive/CardEdit';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path='/contacts' element={<Contacts />} />
             <Route path='/register' element={<Register />} />
             <Route path='/canvas' element={<Canvas />} />
+            <Route path='/editcard' element={<CreatePdfForm />} />
           </Routes>
         </HashRouter>
     </div>
