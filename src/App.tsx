@@ -42,7 +42,7 @@ function App() {
             <Route path='/contacts' element={<Contacts />} />
             <Route path='/register' element={<Register />} />
             <Route path='/canvas' element={<Canvas />} />
-            <Route path='/editcard' element={<CreatePdfForm />} />
+            <Route path="/editcard/:id" element={<CreatePdfForm />} />
           </Routes>
         </HashRouter>
     </div>

@@ -21,6 +21,7 @@ interface CardDataProps {
   subtitle: string;
   chip: string[];
   clinic: string;
+  id: number; // Добавляем идентификатор карточки
 }
 
 export const CardData: React.FC<CardDataProps> = ({
@@ -29,14 +30,18 @@ export const CardData: React.FC<CardDataProps> = ({
   subtitle,
   chip,
   clinic,
+  id, // Получаем идентификатор
 }) => {
   const navigate = useNavigate();
+  
   const handleClickCanvas = () => {
     navigate("/canvas");
   };
+  
   const handleClickEdit = () => {
-    navigate("/editcard");
+    navigate(`/editcard/${id}`); // Передаем ID карточки в URL
   };
+  
   return (
     <CardContainer>
       <Checkbox />

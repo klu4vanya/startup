@@ -17,34 +17,31 @@ import FilterModal from "./Filter";
 export const CardInfo = [
   {
     src: card_img_1,
-    title: "123675",
+    title: "4098678-9",
     subtitle:
-      "Опухоль пищевода, диагностированная как низкодифференцированная карцинома с некоторой нейроэндокринной дифференцировкой.",
-    chip: ["Меланома", "Невус с диспалазией", "Синий невус"],
-    clinic: "ГУ РНПЦ Омр им. Н. Н. Александрова",
+      "На СО щеки в ретромолярной области справа и слева с переходом на АО - папулы белого цвета, сливающиеся в кружевной рисунок, выступающий над поверхностью СО; подлежащая СО не изменена",
+    chip: ["Плоский лишай"],
+    clinic: "Минская областная стоматологическая поликлиника",
   },
   {
     src: card_img_2,
-    title: "829605",
+    title: "9098678-9",
     subtitle:
-      "Изменяющийся невус с темной центральной областью на коже левого нижнего века.",
-    chip: ["Меланома", "Невус с диспалазией", "Синий невус"],
-    clinic: "ГУ РНПЦ Омр им. Н. Н. Александрова",
+      "в ретромолярной области слева, в области АО НЧ слева, язычной поверхности - образование в пределах здоровых тканей на ножке, 0,2х0,4 мм",
+    chip: ["Плоский лишай"],
+    clinic: "Минская областная стоматологическая поликлиника",
   },
 ];
 
 export default function Archive() {
   const [openFilter, setOpenFilter] = useState(false);
+
   const toggleFilter = () => {
     setOpenFilter(!openFilter);
   };
+
   return (
-    <div
-      style={{
-        position: "relative",
-        top: "195px",
-      }}
-    >
+    <div style={{ position: "relative", top: "195px" }}>
       <SearchContainer>
         <FilterIcon onClick={toggleFilter} />
         <SearchWrapper>
@@ -59,7 +56,11 @@ export default function Archive() {
           <CheckAllTitle>Выбрать все</CheckAllTitle>
         </CheckAllContainer>
         {CardInfo.map((item, index) => (
-          <CardData {...item} key={index} />
+          <CardData 
+            {...item} 
+            key={index}
+            id={index} // Передаем индекс как ID карточки
+          />
         ))}
       </DataContainer>
     </div>
