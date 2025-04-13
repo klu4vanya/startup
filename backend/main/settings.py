@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
+    'drf_spectacular',
+    'drf_spectacular_sidecar',  # required for Django collectstatic discovery
+
     'accounts.apps.AccountsConfig',
 ]
 
@@ -138,9 +141,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Rest Framework
 REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Caladrius API',
+    'DESCRIPTION': 'CALADRIUS is a comprehensive package of medical tools and software from a single source. It covers all stages of the pathologist’s workflow, offering solutions for the complete digitalization of histological, cytological and hematological samples, as well as for case management thanks to its functionalities. The clinical case management system allows the pathologist to control the entire routine pathology workflow, providing the necessary information in a convenient digital format. This facilitates rapid and accurate diagnosis. The software is perfectly adapted to existing medical systems.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    'SWAGGER_UI_DIST': 'SIDECAR',  # shorthand to use the sidecar instead
+    'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
+    'REDOC_DIST': 'SIDECAR',
 }
 
 SIMPLE_JWT = {

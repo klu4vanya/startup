@@ -1,12 +1,16 @@
 from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.renderers import JSONRenderer, BrowsableAPIRenderer
 from rest_framework.views import APIView
 
-from .serializers import UserSerializer
+from .serializers import UserSerializer, ProfileSerializer
 
 
 class RegistrationView(APIView):
+    """
+    Регистрация нового пользователя
+    """
     serializer_class = UserSerializer
     permission_classes = (AllowAny,)
 
@@ -17,9 +21,15 @@ class RegistrationView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    def options(self, request, *args, **kwargs):
+        return super().options(request, *args, **kwargs)
+
 
 class ProfileView(APIView):
-    serializer_class = UserSerializer
+    """
+    Получение и обновление данных профиля
+    """
+    serializer_class = ProfileSerializer
     permission_classes = (IsAuthenticated, )
 
     def get(self, request):
