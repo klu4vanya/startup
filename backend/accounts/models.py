@@ -22,6 +22,9 @@ class User(AbstractUser):
 
     is_approved = models.BooleanField(default=False, null=False, blank=False)
 
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
 
