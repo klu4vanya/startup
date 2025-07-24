@@ -4,7 +4,8 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 from .pagination import StandardResultsSetPagination
 from .mixin import ChangeModelMixin
-from .serializers import *
+from .serializers import IllnessCaseSerializer, IllnessTagSerializer, IllnessPictureSerializer
+from .models import IllnessCase, IllnessTag, IllnessPicture
 
 
 class IllnessCaseViewSet(ChangeModelMixin, ModelViewSet):
@@ -13,7 +14,7 @@ class IllnessCaseViewSet(ChangeModelMixin, ModelViewSet):
     serializer_class = IllnessCaseSerializer
     pagination_class = StandardResultsSetPagination
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['title', 'description', 'tags', 'age', 'sex', 'created_at   ']
+    filterset_fields = ['title', 'description', 'tags', 'age', 'sex', 'created_at']
 
 
 class IllnessTagViewSet(ChangeModelMixin, ModelViewSet):
@@ -23,3 +24,11 @@ class IllnessTagViewSet(ChangeModelMixin, ModelViewSet):
     pagination_class = StandardResultsSetPagination
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['name', 'type']
+
+class IllnessPictureViewSet(ChangeModelMixin, ModelViewSet):
+    permission_classes = (IsAuthenticated,)
+    queryset = IllnessPicture.objects.all()
+    serializer_class = IllnessPictureSerializer
+    pagination_class = StandardResultsSetPagination
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['illness_case', 'picture']

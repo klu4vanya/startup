@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import IllnessCase, IllnessTag
+from .models import IllnessCase, IllnessTag, IllnessPicture
 
 
 class IllnessTagSerializer(serializers.ModelSerializer):
@@ -13,4 +13,9 @@ class IllnessCaseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = IllnessCase
+        fields = '__all__'
+
+class IllnessPictureSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = IllnessPicture
         fields = '__all__'

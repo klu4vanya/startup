@@ -1,20 +1,34 @@
-# Virtual environment
+# IDE and text editor files.
+.idea/
+.vscode/
+.vs/
+
+# Virtual Environment.
 venv/
 
-# VSCode files
-vscode/
-
-# PyCharm files
-.idea/
-
-# Django files
-backend/user_photos/
+# Django generated files.
 backend/static/
 backend/media/
-backend/db.sqlite3
+backend/user_photos/
+backend/illness_cases/
 
-# Python files
+# Python cache files.
 __pycache__/
 
-# Env files
-*.env
+# Docker
+docker-compose.override.yml
+
+# Environment variables
+database.env
+backend.env
+.env
+
+# DB data
+docker/db/data/*
+db.sqlite3
+
+# Static files
+backend/static/*
+
+# Media files
+backend/media/*
