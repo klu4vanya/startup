@@ -15,6 +15,7 @@ class IllnessCaseSerializer(serializers.ModelSerializer):
         model = IllnessCase
         fields = '__all__'
 
+
 class IllnessPictureSerializer(serializers.ModelSerializer):
     class Meta:
         model = IllnessPicture

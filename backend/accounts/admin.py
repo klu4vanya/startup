@@ -3,6 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 
 from .models import User
 
+
 class UserAdmin(UserAdmin):
     list_display = ('email', 'username', 'is_staff', 'is_active')
     fieldsets = (
@@ -11,5 +12,6 @@ class UserAdmin(UserAdmin):
         ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         ('Important dates', {'fields': ('last_login',)}),
     )
+
 
 admin.site.register(User, UserAdmin)

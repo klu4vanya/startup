@@ -25,6 +25,7 @@ class IllnessTagViewSet(ChangeModelMixin, ModelViewSet):
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['name', 'type']
 
+
 class IllnessPictureViewSet(ChangeModelMixin, ModelViewSet):
     permission_classes = (IsAuthenticated,)
     queryset = IllnessPicture.objects.all()
