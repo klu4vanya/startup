@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
     "accounts.apps.AccountsConfig",
     "archive.apps.ArchiveConfig",
+    "contact.apps.ContactConfig",
 ]
 
 MIDDLEWARE = [

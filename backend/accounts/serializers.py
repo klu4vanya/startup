@@ -1,10 +1,14 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
+from main.serializers import ObjectIdField
+
 User = get_user_model()
 
 
 class UserSerializer(serializers.ModelSerializer):
+    id = ObjectIdField(read_only=True)
+
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'password', 'status',
@@ -21,6 +25,8 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class ProfileSerializer(serializers.ModelSerializer):
+    id = ObjectIdField(read_only=True)
+
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'status', 'institution', 'photo', 'additional_info']

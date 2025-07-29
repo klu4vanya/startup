@@ -11,11 +11,16 @@ services:
 
   db:
     image: mongo
+    restart: always
     volumes:
-      - ./docker/db/data:/var/lib/mongo
-      - ./docker/db/db-init:/docker-entrypoint-initdb.d
+      - ./docker/db/data:/data/db
+      - ./docker/db/db-init/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     env_file:
       - ./database.env
+    ports:
+      - 27017:27017
+    networks:
+      - default
 
   backend:
     build:

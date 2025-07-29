@@ -1,7 +1,8 @@
-Django==3.8.1
-python-dotenv==1.1.0
+Django==5.2.2
 Pillow==11.1.0
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
-django-two-factor-auth==1.17.0
+django-mongodb-backend==5.2.0b1
 django-filter==25.1
+drf-spectacular==0.28.0
+drf-spectacular-sidecar==2025.4.1

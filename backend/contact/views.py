@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.mixins import CreateModelMixin
 
-# Create your views here.
+from .serializers import ContactSerializer
+from .models import Contact
+
+
+class ContactViewSet(CreateModelMixin, GenericViewSet):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
