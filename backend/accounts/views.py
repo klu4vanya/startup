@@ -1,45 +1,63 @@
-from rest_framework import status
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework import viewsets, permissions, status
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 from rest_framework.response import Response
-from rest_framework.views import APIView
-
+from django.contrib.auth import get_user_model
 from .serializers import UserSerializer, ProfileSerializer
 
+User = get_user_model()
 
-class RegistrationView(APIView):
-    """
-    Регистрация нового пользователя
-    """
+class IsOwner(permissions.BasePermission):
+    def has_object_permission(self, request, view, obj):
+        return obj == request.user
+
+
+class UserCreateViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = (AllowAny,)
+    http_method_names = ['post']
+    #throttling anon access
+    throttle_classes = [AnonRateThrottle] 
 
-    def post(self, request):
-        serializer = self.serializer_class(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
 
-    def options(self, request, *args, **kwargs):
-        return super().options(request, *args, **kwargs)
+        # Return limited info to prevet info leak
+        data = {
+            "id": user.id,
+            "username": user.username,
+        }
+        return Response(data, status=status.HTTP_201_CREATED)
 
 
-class ProfileView(APIView):
-    """
-    Получение и обновление данных профиля
-    """
+class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
-    permission_classes = (IsAuthenticated, )
+    permission_classes = [permissions.IsAuthenticated, IsOwner]
+    throttle_classes = [UserRateThrottle]
 
-    def get(self, request):
-        user = request.user
-        serializer = self.serializer_class(user, many=False)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+    def get_queryset(self):
+        return User.objects.filter(pk=self.request.user.pk)
 
-    def put(self, request):
-        user = request.user
-        serializer = self.serializer_class(user, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def get_object(self):
+        return self.request.user
+
+    def update(self, request, *args, **kwargs):
+        user = self.get_object()
+
+        # Block immediate update of username or email without verification
+        sensitive_fields = ['email', 'username']
+        if any(field in request.data for field in sensitive_fields):
+            #  Implement logic verification logic 
+            return Response(
+                {
+                    "detail": "Changing username or email requires verification. Please verify before updating."
+                },
+                status=status.HTTP_202_ACCEPTED,
+            )
+
+        # Use partial=True to support partial updates
+        serializer = self.get_serializer(user, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
