@@ -32,4 +32,4 @@ class IllnessPictureViewSet(ChangeModelMixin, ModelViewSet):
     serializer_class = IllnessPictureSerializer
     pagination_class = StandardResultsSetPagination
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['illness_case', 'picture']
+    filterset_fields = ['illness_case']
